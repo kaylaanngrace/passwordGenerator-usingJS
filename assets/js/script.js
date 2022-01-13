@@ -37,9 +37,11 @@ function generatePassword() {
 
   // Step 4 display password to page.
 
+  var randomPassword = "this is your secure password";
   // return variable
   return randomPassword;
 }
+
 
 // pick password length btwn 8-128 characters
 var length = function() {
@@ -83,13 +85,10 @@ function copy() {
   var copyText = document.querySelector("#password");
   copyText.select();
   navigator.clipboard.writeText(copyText.value);
-
-  alert ("Copied the text: " + copyText.value);
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 copyBtn.addEventListener("click", copy);
  
-var ele = document.value
 
