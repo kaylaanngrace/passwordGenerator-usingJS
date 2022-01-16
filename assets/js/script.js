@@ -49,8 +49,26 @@ function generatePassword() {
     generatePassword ();
   } 
 
-  // Step 3 Generate password based on inputs
-  
+  // Step 3 Generate password based on inputs 
+  var pwdCharacters = []
+    
+  if (confirmSpecialCharacter) {
+    pwdCharacters = pwdCharacters.concat(specialChar)
+  }
+
+  if (confirmNumerics) {
+    pwdCharacters = pwdCharacters.concat(numerics)
+  }
+    
+  if (confirmLowercase) {
+    pwdCharacters = pwdCharacters.concat(alpha)
+  }
+
+  if (confirmUppercase) {
+    pwdCharacters = pwdCharacters.concat(upperCase)
+  }
+
+  console.log(pwdCharacters)
   // Step 4 display password to page.  
   var randomPwd = [] 
       
