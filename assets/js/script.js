@@ -49,6 +49,17 @@ function generatePassword() {
     generatePassword ();
   } 
 
+  // Step 3 Generate password based on inputs
+  
+  // Step 4 display password to page.  
+  var randomPwd = [] 
+      
+  for (var i = 0; i < confirmLength; i++) {
+    randomPwd = randomPwd + pwdCharacters[Math.floor(Math.random() * pwdCharacters.length)];
+    console.log(randomPwd)
+  }
+
+  return randomPwd;
 };
 
 // Get references to the #generate element
